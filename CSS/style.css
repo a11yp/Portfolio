@@ -1,0 +1,91 @@
+body{background-color:#000000}
+/* primary colour green: #00FF7F
+secondry color purple: #DA70D6
+text color:#F5FFFA*/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 400; /* Sets the font weight to 400 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #F5FFFA;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+  color:#00FF7F;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+  color:#DA70D6;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 500;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 500;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #00FF7F;
+  text-decoration: none; /* No underlining */
+}
+
+a:visited { /* visited link */
+  color: #DA70D6;
+}
+
+a:hover {
+  color: #DA70D6;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:active { /* selected link */
+  color: #00FF7F;
+}
+a:hover,
+a:focus {
+  color: #DA70D6;
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color:transparent;
+  color: #00FF7F; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button:hover{
+  background-color:#00FF7F;
+  color:#000000;
+}
+.button {
+  background-color:transparent;
+  color: #00FF7F;
+  text-transform: uppercase;
+  border: 2px solid #00FF7F;
+}
+.button.contact:hover {
+  background-color: #00FF7F;
+  color: #000000;
+}
