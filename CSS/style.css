@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body{background-color:#000000}
 /* primary colour green: #00FF7F
 secondry color purple: #DA70D6
@@ -13,6 +17,16 @@ body {
   font-weight: 400; /* Sets the font weight to 400 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #F5FFFA;
+}
+
+header {
+  background-color: #0000000;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 3px solid #4a4a4a;
+}
+selector {
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
 }
 
 h1, h2, h3, h4 {
@@ -41,6 +55,14 @@ h4 {
 
 img {
   width: 100%;
+
+  margin: 0 auto;
+  display: block;
+    width: 1200px;
+
+}
+.container {
+  max-width: 1200px;
 }
 
 a {
@@ -88,4 +110,17 @@ a:focus {
 .button.contact:hover {
   background-color: #00FF7F;
   color: #000000;
+}
+
+selector {
+  position: relative;
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
