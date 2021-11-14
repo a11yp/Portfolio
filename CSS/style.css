@@ -20,12 +20,14 @@ body {
 }
 
 header {
+  text-align: center;
   background-color: #0000000;
   padding: 10px;
   margin: 10px;
   border-bottom: 3px solid #4a4a4a;
   position: relative
 }
+
 selector {
   margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
 }
@@ -122,26 +124,26 @@ selector {
 .container {
   padding: 0 15px;
 }
+.Container {
+  text-align: center;
+}
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 #hero h1 {
   text-align: center; /* Centers text */
 }
-.logo {
-  max-width: 250px;
-  text-align: center;
-    padding: 10px 0;
-}
+
+
 nav > ul {
   list-style-type: none;
   padding: 0;
 }
 nav > ul > li {
   display: inline-block;
+  text-align: center;
 }
 nav > ul > li > a:visited. {
-  max width:100%;
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -151,6 +153,7 @@ nav > ul > li > a:visited. {
   background-color: #ffe4c4;
 }
 #hero {
+  text-align: center;
   background-color: #000000;
   padding: 20px 0;
   display: inline-block;
@@ -158,4 +161,6 @@ nav > ul > li > a:visited. {
 }
 main {
   padding-top: 133px;
-}
+  .list {
+    text-align: center;
+  }
