@@ -289,23 +289,24 @@ font-variant: small-caps;
   animation-timing-function: linear;
 }
 
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+@keyframes cloud-move-1 {
+from {transform: translate(0,50px);}
+to {transform: translate(400px,50px);}
 }
-.cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-@keyframe cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+@keyframes cloud-move-2 {
+from {transform: translate(446px,48px);}
+to {transform: translate(100px, 48px);}
 }
 
-      }
+.cloud-front {
+animation-duration: 10s;
+animation-name: cloud-move-1;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: linear;
+
+}
+.cloud-back {
+animation: 24s cloud-move-2 infinite alternate linear;
+
+}
