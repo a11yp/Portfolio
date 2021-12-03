@@ -210,6 +210,30 @@ font-variant: small-caps;
      margin-right: -20px;
 
 }
+footer {
+text-align: center;
+}
+
+footer .social svg {
+height: 40px;
+width: auto;
+fill: #ffffff;
+transition: .2s ease-in-out 0s;
+}
+
+footer .social svg:hover {
+height: 40px; width: auto;
+fill: #ffffff;
+cursor: pointer;
+transform: scale(1.25);
+}
+
+footer a.contact {
+display: block;
+width: 200px;
+margin: 60px auto;
+
+}
 
 
 
