@@ -145,6 +145,11 @@ selector {
 }
 
 
+
+.txt-center {
+     text-align: center;
+}
+
 nav > ul {
   list-style-type: none;
   padding: 0;
@@ -214,10 +219,9 @@ footer {
 text-align: center;
 }
 
-footer .social svg {
+footer .social  a svg {
 height: 40px;
 width: auto;
-fill: #ffffff;
 transition: .2s ease-in-out 0s;
 }
 
@@ -241,10 +245,12 @@ margin: 60px auto;
 
 
 
+
+
 @media only screen and (min-width: 640px) {
 
     .row {
-    margin: 0 0 20px 0;
+    margin: 0 0 60px 0;
 }
 
 
@@ -256,7 +262,6 @@ margin: 60px auto;
       }
 
 
-
     .col-md-6 {
     width: 50%;
      padding-right: 2%;
@@ -265,7 +270,9 @@ margin: 60px auto;
     }
     .col-md-6:last-child {
        padding-right: 0%;
+        padding-left: 20px;
     }
+
 
 
         .col-lg-7 {
@@ -295,6 +302,26 @@ margin: 60px auto;
     clear: both;
     display: table;
   }
+
+    nav > ul > li {
+  display: inline-block;
+  text-align: center;
+        margin: 0 10px;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+}
+
+
 
   @keyframes color-change {
     from {fill: #edc655;}
@@ -332,5 +359,62 @@ animation-timing-function: linear;
 }
 .cloud-back {
 animation: 24s cloud-move-2 infinite alternate linear;
+
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+
+    header {
+  background-color: #000000;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 3px solid #4a4a4a;
+  position: relative
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.logoimg {
+    max-width: 290px;
+    height: auto;
+    position: absolute;
+    left 10px;
+    top: 10px;
+
+    /*
+    display: block;
+    margin: 0 auto;
+
+    */
+}
+
+    nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+  text-align: center;
+
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+
+nav > ul > li > a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
 
 }
