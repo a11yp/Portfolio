@@ -150,6 +150,7 @@ selector {
      text-align: center;
 }
 
+/*
 nav > ul {
   list-style-type: none;
   padding: 0;
@@ -164,6 +165,58 @@ nav > ul > li > a:visited {
   font-weight: 700;
   color: #4a4a4a;
 }
+
+*/
+
+nav > ul > li {
+  display: inline-block;
+}
+
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon, .navtoggle.responsive li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #73bd80;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+
+
+
+
 #hero {
   background-color: #ffe4c4;
 }
@@ -303,6 +356,7 @@ margin: 60px auto;
     display: table;
   }
 
+    /*
     nav > ul > li {
   display: inline-block;
   text-align: center;
@@ -312,12 +366,28 @@ margin: 60px auto;
 nav > ul > li {
   display: inline-block;
 }
-.navtoggle li:not(:last-child) {
+  */
+    .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+    .navtoggle li:last-child {
   display: none;
 }
-.navtoggle, .navtoggle.responsive {
-  position: relative;
+
+
+    nav > ul {
+  list-style-type: none;
+  padding: 0;
 }
+
+  .navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 0px solid transparent;
+}
+
+
 
 }
 
@@ -402,12 +472,6 @@ nav > ul > li {
   display: inline-block;
   text-align: center;
 
-}
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-.navtoggle li:last-child {
-  display: none;
 }
 
 nav > ul > li > a:visited {
