@@ -386,8 +386,16 @@ nav > ul > li {
   padding: 10px 0;
   border-top: 0px solid transparent;
 }
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
 
-
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
 
 }
 
