@@ -84,7 +84,7 @@ img {
 
 
 a {
-  color: #00FF7F;
+  color: #DA70D6;
   text-decoration: none; /* No underlining */
 }
 
@@ -93,7 +93,7 @@ a:visited { /* visited link */
 }
 
 a:active { /* selected link */
-  color: #00FF7F;
+  color: #DA70D6;
 }
 a:hover,
 a:focus {
@@ -462,7 +462,6 @@ animation: 24s cloud-move-2 infinite alternate linear;
     max-width: 290px;
     height: auto;
     position: absolute;
-    left 10px;
     top: 10px;
 
     /*
