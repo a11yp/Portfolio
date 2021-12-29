@@ -10,6 +10,7 @@ text color:#F5FFFA*/
 html {
    scroll-behavior: smooth;
 }
+
 body {
   background-color: #000000;
   font-family: 'Roboto', sans-serif;
@@ -19,10 +20,9 @@ body {
   color: #F5FFFA;
 }
 
-
 header {
   text-align: center;
-  background-color: #000000;
+  background-color: #DA70D6;
   padding: 10px;
   margin: 10px;
   border-bottom: 3px solid #4a4a4a;
@@ -88,9 +88,6 @@ a {
   text-decoration: none; /* No underlining */
 }
 
-a:visited { /* visited link */
-  color: #DA70D6;
-}
 
 a:active { /* selected link */
   color: #DA70D6;
@@ -186,7 +183,7 @@ nav > ul > li {
   position: absolute;
   right: 0;
   top: 2px;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 nav > ul {
